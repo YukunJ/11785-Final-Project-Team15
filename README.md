@@ -6,7 +6,8 @@ This is the repository of final project for 11-785 Intro to Deep Learning at CMU
 
 Our code implementation is heavily dependent on the source code released by original authors of the paper. The links could be found as follows:
 
-RepeatNet: (https://github.com/PengjieRen/RepeatNet-pytorch)
++ RepeatNet: (https://github.com/PengjieRen/RepeatNet-pytorch)
++ SRGNN: (https://github.com/CRIPAC-DIG/SR-GNN)
 
 --- 
 
