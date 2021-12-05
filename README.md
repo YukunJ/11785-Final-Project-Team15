@@ -1,5 +1,5 @@
 # 11785 Intro to Deep Learning
-### Final Project 
+## Making Recommender Systems More Knowledgeable:A Framework to Incorporate Side Information
 #### Team15: Yukun Jiang, Xinyi Chen, Leo Guo, Jing Xi Liu
 
 This is the repository of final project for 11-785 Intro to Deep Learning at CMU fall 2021
