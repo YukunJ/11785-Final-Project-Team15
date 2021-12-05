@@ -9,6 +9,12 @@ Our code implementation is heavily dependent on the source code released by orig
 + RepeatNet: (https://github.com/PengjieRen/RepeatNet-pytorch)
 + SRGNN: (https://github.com/CRIPAC-DIG/SR-GNN)
 
+The original dataset is too big to be pushed up here, we provide the following links for reference:
+
++ Last.FM : (http://ocelma.net/MusicRecommendationDataset/lastfm-360K.html)
++ MovieLens: (https://grouplens.org/datasets/movielens/)
++ Digi: (https://competitions.codalab.org/competitions/11161#learn_the_details-data2)
++ TaFeng: (https://www.kaggle.com/chiranjivdas09/ta-feng-grocery-dataset)
 --- 
 
 ### Re-run RepeatNet
