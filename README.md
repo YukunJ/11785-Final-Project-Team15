@@ -17,9 +17,9 @@ The original dataset is too big to be pushed up here, we provide the following l
 + TaFeng: (https://www.kaggle.com/chiranjivdas09/ta-feng-grocery-dataset)
 --- 
 
-### Re-run RepeatNet
+### Run RepeatNet/RepeatNet_Sideinfo
 
-+ Author: Yukun J
++ Author: Yukun J, Leo G
 + Init: Fri. Oct 29 15:12:45 PM
 + LastUpdate: Sat. Oct 30 11:54:20 AM
 + Source1: [https://github.com/PengjieRen/RepeatNet]
@@ -27,7 +27,7 @@ The original dataset is too big to be pushed up here, we provide the following l
 
 #### Caution:
 
-The original code is for distributed training. To be able to run it on our poor little stingy colab, it has gone quite a few modifications. Please read through this document and don't look back to the source links above. And there is a few newly added stuff. When in question, reach out to me!
+The original code is for distributed training. To be able to run it on our poor little stingy colab, it has gone quite a few modifications. Please read through this document and don't look back to the source links above. And there is a few newly added stuff. When in question, reach out to us!
 
 #### How to run
 
@@ -36,6 +36,11 @@ Train command
 ```
 !python -m torch.distributed.launch --nproc_per_node=1 ./RepeatNet/Run.py --mode='train'
 ```
+or
+```
+!python -m torch.distributed.launch --nproc_per_node=1 ./RepeatNet_Sideinfo/Run.py --mode='train'
+```
+to incorporate side information into training process
 
 Validation + Test command
 ```
