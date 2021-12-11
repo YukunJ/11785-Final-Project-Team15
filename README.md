@@ -113,37 +113,6 @@ A few things to notice in pipeline workflow:
 
 11. Run the `metrics.py` and get the metric evaulation about `Recall@10`, `Recall@20`, `MRR@10`, `MRR@20`.
 
-12. So far I have successfully replicate the result from the original RepeatNet paper on the `LastFM` dataset as follows:
-
-
-+ LASTFM
-
-| Metrics   | Original | Reproduce |
-|-----------|----------|-----------|
-| Recall@10 | 24.18    | 23.85     |
-| Recall@20 | 32.38    | 31.83     |
-| MRR@10    | 11.46    | 11.53     |
-| MRR@20    | 12.03    | 12.08     |
-
-
-+ DIGINETICA
-
-| Metrics   | Original | Reproduce |
-|-----------|----------|-----------|
-| Recall@10 | 36.86    | 37.79     |
-| Recall@20 | 47.79    | 49.99     |
-| MRR@10    | 16.90    | 16.69     |
-| MRR@20    | 17.66    | 17.54     |
-
-+ MOVIELENS
-
-| Metrics   | Reproduce |
-|-----------|-----------|
-| Recall@10 | 8.64      |
-| Recall@20 | 13.21     |
-| MRR@10    | 3.51      |
-| MRR@20    | 3.82      |
-
 ### Run SRGNN
 + Author: Leo G
 
