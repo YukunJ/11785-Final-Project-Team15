@@ -8,9 +8,13 @@ The structure of this folder looks like this:
 
 ```python
 -Preprocessing
+    -TaFeng_format_conversion.ipynb
+    -diginetica_preprocessing.ipynb
+    -movielens_preprocessing.ipynb
     -process_lastfm.py
     -split_lastfm.py
     -data_aug_lastfm.py
+    -ta_feng_preprocessing.ipynb
 -Common
     -BilinearAttention.py
     -CumulativeTrainer.py
