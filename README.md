@@ -4,6 +4,34 @@
 
 This is the repository of final project for 11-785 Intro to Deep Learning at CMU fall 2021
 
+The structure of this folder looks like this:
+
+```python
+-Preprocessing
+    -process_lastfm.py
+    -split_lastfm.py
+    -data_aug_lastfm.py
+-Common
+    -BilinearAttention.py
+    -CumulativeTrainer.py
+    -EMA.py
+-RepeatNet
+    -Dataset.py
+    -Model.py
+    -Run.py
+-output
+    -RepeatNet
+        -lastest_repeatnet.pt
+        -repeatnet.pt
+-datasets
+    -demo
+        -lastfm_valid.artist.txt
+        -lastfm_test.artist.txt
+        -lastfm_train.artist.txt
+-metrics.py
+-README.md
+```
+
 Our code implementation is heavily dependent on the source code released by original authors of the paper. The links could be found as follows:
 
 + RepeatNet: (https://github.com/PengjieRen/RepeatNet-pytorch)
@@ -40,51 +68,26 @@ or
 ```
 !python -m torch.distributed.launch --nproc_per_node=1 ./RepeatNet_Sideinfo/Run.py --mode='train'
 ```
-to incorporate side information into training process
+to incorporate side information into training process.
 
 Validation + Test command
 ```
 !python -m torch.distributed.launch --nproc_per_node=1 ./RepeatNet/Run.py --mode='infer'
 ```
-
-There is currently no easy way to do training while doing validationt to see the performance on the fly. Since now we could only do training on **GPU**, yet the validation and testing must be done on **CPU** due to memory storage issue.
+or
+```
+!python -m torch.distributed.launch --nproc_per_node=1 ./RepeatNet_Sideinfo/Run.py --mode='infer'
+```
+to incorporate side information.
 
 A typical workflow would be like this:
 
 + 1. You decide on some hyperparamters and statically type them
-+ 2. On **GPU**, do training from beginning to end, save the model file
-+ 3. Switch to **CPU**, load the model and do Inference, store the result
++ 2. Do training from beginning to end, save the model file
++ 3. Load the model and do Inference, store the result
 + 4. Do metric calculation offline using scripts
 
 The way how this works is that, you will upload this whole folder to your google drive, you in colab mount your google drive, `cd` command to this folder and run one of the above commands.
-
-The structure of this folder looks like this:
-
-```python
--Preprocessing
-    -process_lastfm.py
-    -split_lastfm.py
-    -data_aug_lastfm.py
--Common
-    -BilinearAttention.py
-    -CumulativeTrainer.py
-    -EMA.py
--RepeatNet
-    -Dataset.py
-    -Model.py
-    -Run.py
--output
-    -RepeatNet
-        -lastest_repeatnet.pt
-        -repeatnet.pt
--datasets
-    -demo
-        -lastfm_valid.artist.txt
-        -lastfm_test.artist.txt
-        -lastfm_train.artist.txt
--metrics.py
--README.md
-```
 
 A few things to notice in pipeline workflow:
 
