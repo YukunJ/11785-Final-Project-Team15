@@ -7,31 +7,39 @@ This is the repository of final project for 11-785 Intro to Deep Learning at CMU
 The structure of this folder looks like this:
 
 ```python
--Preprocessing
-    -TaFeng_format_conversion.ipynb
-    -diginetica_preprocessing.ipynb
-    -movielens_preprocessing.ipynb
-    -process_lastfm.py
-    -split_lastfm.py
-    -data_aug_lastfm.py
-    -ta_feng_preprocessing.ipynb
 -Common
     -BilinearAttention.py
     -CumulativeTrainer.py
     -EMA.py
+-Preprocessing
+    -data_aug_lastfm.py
+    -diginetica_preprocessing.ipynb
+    -movielens_preprocessing.ipynb
+    -process_lastfm.py
+    -split_lastfm.py
+    -TaFeng_format_conversion.ipynb
+    -ta_feng_preprocessing.ipynb
 -RepeatNet
     -Dataset.py
     -Model.py
     -Run.py
--output
-    -RepeatNet
-        -lastest_repeatnet.pt
-        -repeatnet.pt
+-RepeatNet_Sideinfo
+    -Dataset.py
+    -Model.py
+    -Run.py
+-SRGNN
+    -SRGNN_Sideinfo.ipynb
+    -SRGNN_attentionloss.ipynb
+    -SRGNN_basic.ipynb
 -datasets
     -demo
         -lastfm_valid.artist.txt
         -lastfm_test.artist.txt
         -lastfm_train.artist.txt
+-output
+    -RepeatNet
+        -lastest_repeatnet.pt
+        -repeatnet.pt
 -metrics.py
 -README.md
 ```
