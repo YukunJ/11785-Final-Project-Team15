@@ -107,7 +107,7 @@ A few things to notice in pipeline workflow:
 
 8. After finish training, the model should be stored as `output/RepeatNet/lastest_repeatnet.pt`, now rename it to `repeatnet.pt`.
 
-9. You should probably now can do Inference. Run the command given above (Using **CPU**!!!)
+9. You should probably now can do Inference. Run the command given above
 
 10. You should get in the `output/RepeatNet/...` two files called `valid_result.txt` and `test_result.txt`. Put the `test_result.txt` with the `metrics.py`. 
 
@@ -143,5 +143,8 @@ A few things to notice in pipeline workflow:
 | Recall@20 | 13.21     |
 | MRR@10    | 3.51      |
 | MRR@20    | 3.82      |
+
+### Run SRGNN
++ Author: Leo G
 
 
