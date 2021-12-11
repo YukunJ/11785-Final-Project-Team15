@@ -45,6 +45,10 @@ The original dataset is too big to be pushed up here, we provide the following l
 + TaFeng: (https://www.kaggle.com/chiranjivdas09/ta-feng-grocery-dataset)
 --- 
 
+### Data Preprocessing
+
+We used different ways to preprocess the datasets we have. Please check the folder "Preprocessing", which contains the code we used to perprocess datasets.
+
 ### Run RepeatNet/RepeatNet_Sideinfo
 
 + Author: Yukun J, Leo G
