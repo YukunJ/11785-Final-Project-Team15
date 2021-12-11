@@ -147,4 +147,6 @@ A few things to notice in pipeline workflow:
 ### Run SRGNN
 + Author: Leo G
 
+Open the folder SRGNN, pick the ipynb file you want to run, and execute from the first cell to the last cell.
 
+The cell defining the main function allows you to modify all kinds of hyperparameters.
