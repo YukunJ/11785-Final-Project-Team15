@@ -96,6 +96,8 @@ or
 ```
 to incorporate side information.
 
+Note that there can be multiple files starting with Run in folders RepeatNet and RepeatNet_Sideinfo. They correspond to Run.py for different datasets
+
 A typical workflow would be like this:
 
 + 1. You decide on some hyperparamters and statically type them
